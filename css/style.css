@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/*logo*/
+.logo img{
+    border-radius: 100%;
+}
+
+/*navbar*/
+nav{
+    background-color: darkgreen;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: background-color .5s;
+}
+nav a:hover{
+    background-color: black;
+
+}
+nav li:last-child{
+    margin-right: auto;
+}
+
+
+.side-bar ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 999;
+    background-color: darkgreen;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+
+}
+
+.side-bar .hide-side-bar{
+    /*width: 80px;*/
+}
+.side-bar li, .side-bar a{
+    width: 100%;
+    text-align:center;
+}
+
+.show-side-bar{
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .show-side-bar{
+        display: block;
+    }
+    .side-bar ul{
+        width: 100%;
+    }
+    
+}
+
+
+
+body{
+    min-height: 100vh;
+    width:100%;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+}
+
+h1{
+    color: white;
+    background-color: darkgreen;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 0px 20px;
+}
+
+.body{
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 680px;
+    background-color:antiquewhite;
+    border-radius: 0px 20px;
+}
+
+pre{
+    text-align: center;
+}
+
+.images-and-videos-title{
+    text-align: right;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 0px 20px;
+    max-width: 420px;
+    color: white;
+    background-color: darkgreen;
+
+}
+.images-and-videos{
+    text-align: center;
+}
+
+
+/* the footer */
+footer{
+    min-width: 420px;
+    color: white;
+    background-color: darkgreen;
+    font-size: large;
+    margin: auto ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#me{
+    color:white;
+    font-weight: bold;
+}
