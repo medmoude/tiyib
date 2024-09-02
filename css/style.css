@@ -44,20 +44,23 @@ nav li:last-child{
     margin-right: auto;
 }
 
+.side-bar{
+    width: 100%;
+}
 
 .side-bar ul{
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     z-index: 999;
     background-color: darkgreen;
     display: none;
     flex-direction: column;
     align-items: flex-start; 
     justify-content: flex-start;
-
+    
 }
 
 .side-bar .hide-side-bar{
@@ -72,15 +75,20 @@ nav li:last-child{
     display: none;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 888px) {
     .hide-on-mobile{
         display: none;
     }
     .show-side-bar{
         display: block;
     }
+    .side-bar{
+        width: 100%;
+        transition: all 0.5s ease;
+    }
     .side-bar ul{
         width: 100%;
+
     }
     
 }
