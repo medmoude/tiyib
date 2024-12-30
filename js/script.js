@@ -2,7 +2,8 @@
 let theDate = new Date();
 
 let currentYear = theDate.getFullYear();
-let launchYear = 2024;
+const launchYear = 2024;
+const videos = document.querySelectorAll('video');
 
 document.getElementById("current-year").textContent = currentYear;
 document.getElementById('launch-year').textContent = launchYear;
@@ -41,5 +42,22 @@ window.addEventListener('load', function () {
       window.scrollTo(0, scrollPosition);
     
     }
+});
+
+
+//loop through the videos in the page 
+videos.forEach(video => {
+    video.addEventListener('click', function() {
+        
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { // Firefox
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { // Chrome, Safari
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { // IE/Edge
+            video.msRequestFullscreen();
+        }
+    });
 });
   
