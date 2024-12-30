@@ -15,7 +15,6 @@
 nav{
     background-color: darkgreen;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 40px;
 }
 nav ul {
     width: 100%;
@@ -47,7 +46,6 @@ nav li:last-child{
 
 .side-bar{
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .side-bar ul{
