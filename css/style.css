@@ -13,7 +13,7 @@
 
 /*navbar*/
 nav{
-    background-color: darkgreen;
+    background-color: #333333;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 nav ul {
@@ -55,7 +55,7 @@ nav li:last-child{
     height: 100%;
     width: 100%;
     z-index: 999;
-    background-color: darkgreen;
+    background-color: #333333;
     display: none;
     flex-direction: column;
     align-items: flex-start; 
@@ -106,7 +106,7 @@ header{
 
 h1{
     color: white;
-    background-color: darkgreen;
+    background-color: #333333;
     font-weight: bold;
     margin: 10px auto;
     padding: 10px;
@@ -121,8 +121,8 @@ h1{
     margin: 20px auto;
     padding: 15px;
     max-width: 680px;
-    background-color:antiquewhite;
-    border-radius: 0px 20px;
+    background-color:#E0E0E0;
+    border-radius: 20px;
 }
 
 pre{
@@ -137,7 +137,7 @@ pre{
     border-radius: 0px 20px;
     max-width: 420px;
     color: white;
-    background-color: darkgreen;
+    background-color: #333333;
 
 }
 .images-and-videos{
@@ -149,7 +149,7 @@ pre{
 footer{
     min-width: 420px;
     color: white;
-    background-color: darkgreen;
+    background-color: #333333;
     font-size: large;
     margin: auto ;
     padding: 20px;
